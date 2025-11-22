@@ -23,5 +23,4 @@ jobs:
         run: python -m pip install --upgrade pip pytest
 
       - name: Run tests
-        run: PYTHONPATH=. python -m pytest -q
-        working-directory: .
+        run: PYTHONPATH=.:./hw01 python -m pytest -q
